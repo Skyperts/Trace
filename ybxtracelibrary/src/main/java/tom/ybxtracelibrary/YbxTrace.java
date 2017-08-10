@@ -48,14 +48,14 @@ public class YbxTrace {
         return instance;
     }
 
-    private void setTraceCommonBean(TraceCommonBean traceCommonBean) {
+    public void setTraceCommonBean(TraceCommonBean traceCommonBean) {
         this.traceCommonBean = traceCommonBean;
     }
 
     /**
      * 添加生成的点击事件节点
      */
-    private void addClick(String curl, String curlId, Context per, String perl, String cpos, String cpath) {
+    public void addClick(String curl, String curlId, Context per, String perl, String cpos, String cpath) {
         TraceBean traceBean = new TraceBean();
         if (uploadStrategy == 1) {    //  0批量1即时
             traceBean.uid = traceCommonBean.uid;
@@ -100,7 +100,7 @@ public class YbxTrace {
      * @param curl
      * @param curlId
      */
-    private void addPageview(Context mContext, String curl, String curlId) {
+    public void addPageview(Context mContext, String curl, String curlId) {
 
         TraceBean traceBean = new TraceBean();
         if (uploadStrategy == 1) {    //  0批量1即时
