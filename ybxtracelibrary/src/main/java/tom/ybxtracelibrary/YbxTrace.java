@@ -6,6 +6,8 @@ import android.text.TextUtils;
 import com.google.gson.Gson;
 import com.orhanobut.logger.Logger;
 
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.HashMap;
 
@@ -13,8 +15,9 @@ import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
-import tom.ybxtracelibrary.Entity.TraceCommonBean;
 import tom.ybxtracelibrary.Entity.TraceBean;
+import tom.ybxtracelibrary.Entity.TraceCommonBean;
+import tom.ybxtracelibrary.Entity.TraceMapBean;
 import tom.ybxtracelibrary.Net.ApiRequest;
 import tom.ybxtracelibrary.Utils.SPUtils;
 
@@ -23,18 +26,54 @@ import tom.ybxtracelibrary.Utils.SPUtils;
  */
 
 public class YbxTrace {
+
     // 存储转化率事件的list
     private static ArrayList<TraceBean> traces     = new ArrayList<>();    // 批量上传时存储事件
-    private static ArrayList<TraceBean> errorCache = new ArrayList<>();   // 存储上传失败的事件
+    private static ArrayList<TraceBean> errorCache = new ArrayList<>();    // 存储上传失败的事件
 
     // 存储转化率事件上传策略
     private static int uploadStrategy = 1;     //    0是批量上传，1是即时上传
 
     // 存储转化率事件的基础参数
-    private static TraceCommonBean traceCommonBean = new TraceCommonBean();     //    0是批量上传，1是即时上传
+    private static TraceCommonBean traceCommonBean = new TraceCommonBean();
+    private static TraceMapBean    traceMapBean    = new TraceMapBean();
 
     private static volatile YbxTrace instance;
-    private static Context mContext;
+    private static          Context  mContext;
+
+    public static void initTrace(Context context, String fileName, int strategy) {
+        // 读取assets下的mappingtxt文件
+        String mapping = readAssetsTxt(context, fileName);
+        if (!TextUtils.isEmpty(mapping)) {
+            traceMapBean = new Gson().fromJson(mapping, TraceMapBean.class);
+        }
+
+        // 上传策略
+        uploadStrategy = strategy;
+
+
+    }
+
+    private static String readAssetsTxt(Context context, String fileName) {
+        try {
+            //Return an AssetManager instance for your application's package
+            InputStream is   = context.getAssets().open(fileName);
+            int         size = is.available();
+            // Read the entire asset into a local byte buffer.
+            byte[] buffer = new byte[size];
+            is.read(buffer);
+            is.close();
+            // Convert the buffer into a string.
+            String text = new String(buffer, "utf-8");
+            // Finally stick the string into the text view.
+            return text;
+        } catch (IOException e) {
+            // Should never happen!
+            //            throw new RuntimeException(e);
+            e.printStackTrace();
+        }
+        return "";
+    }
 
     public static YbxTrace getInstance(Context context) {
         mContext = context;
@@ -52,11 +91,42 @@ public class YbxTrace {
         this.traceCommonBean = traceCommonBean;
     }
 
+    public TraceCommonBean getTraceCommonBean() {
+        return traceCommonBean;
+    }
+
     /**
      * 添加生成的点击事件节点
      */
-    public void addClick(String curl, String curlId, Context per, String perl, String cpos, String cpath) {
+    public void addClick(String goActivityName, String curlId, Context present, String presentActivityName, String cpos, String cpath) {
         TraceBean traceBean = new TraceBean();
+        traceBean.a = "click";
+
+        String curlName = goActivityName;
+        if (traceMapBean != null) {
+            HashMap<String, String> vcs = traceMapBean.vc;
+            if (vcs != null && vcs.containsKey(curlName)) {
+                curlName = vcs.get(curlName);
+            }
+        }
+        traceBean.curl = curlName;
+        traceBean.curlId = curlId;
+
+        traceBean.t = System.currentTimeMillis();
+
+        String preName = presentActivityName;
+        if (traceMapBean != null) {
+            HashMap<String, String> vcs = traceMapBean.vc;
+            if (vcs != null && vcs.containsKey(preName)) {
+                preName = vcs.get(preName);
+            }
+        }
+        traceBean.l = preName;
+        traceBean.ltag = present.toString();
+
+        traceBean.cpos = cpos;
+        traceBean.cpath = cpath;
+
         if (uploadStrategy == 1) {    //  0批量1即时
             traceBean.uid = traceCommonBean.uid;
             traceBean.u = traceCommonBean.u;
@@ -69,27 +139,12 @@ public class YbxTrace {
             traceBean.dw = traceCommonBean.dw;
             traceBean.uagent = traceCommonBean.uagent;
 
-            traceBean.a = "click";
-            traceBean.curl = curl;
-            traceBean.curlId = curlId;
-            traceBean.t = System.currentTimeMillis();
-            traceBean.l = perl;
-            traceBean.ltag = per.toString();
-            traceBean.cpos = cpos;
-            traceBean.cpath = cpath;
+            String json = new Gson().toJson(traceBean);
+            Logger.d("analysAct------------>" + json);
 
             uploadImmediately(traceBean, true);
 
         } else {
-            traceBean.a = "click";
-            traceBean.curl = curl;
-            traceBean.curlId = curlId;
-            traceBean.t = System.currentTimeMillis();
-            traceBean.l = perl;
-            traceBean.ltag = per.toString();
-            traceBean.cpos = cpos;
-            traceBean.cpath = cpath;
-
             traces.add(traceBean);
         }
     }
