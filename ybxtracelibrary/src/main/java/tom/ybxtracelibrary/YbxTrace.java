@@ -94,23 +94,6 @@ public class YbxTrace {
     }
 
     /**
-     * 页面事件
-     */
-    public void pageView(Activity activity, String purl, String pref, String tt, String pa) {
-        TraceBean traceBean = new TraceBean();
-        traceBean.en = EventType.Event_Pageview;
-        buildBaseParam(activity, traceBean);
-
-        traceBean.purl = purl;
-        traceBean.pref = pref;
-        traceBean.chid = mChid;
-        traceBean.tt = tt;
-        traceBean.pa = pa;
-
-        upload(traceBean);
-    }
-
-    /**
      * 注册事件
      */
     public void register(Activity activity) {
@@ -122,14 +105,28 @@ public class YbxTrace {
     }
 
     /**
-     * 目前有点击事件和订单事件  渠道开端传入渠道号
-     * ca;           // Event事件类目category，目前有点击类目（c click）和订单类目(o order)
-     * public String ac;           // Event事件动作，每一个动作有对应的类目
-     * public String kv_;         // 预留参数
-     *
-     * @param activity
+     * 页面事件
      */
-    public void event(Activity activity, String purl, String pref, String tt, String pa, String category, String action, HashMap<String, String> kv, String chid) {
+    public void pageView(Activity activity, String purl, String pref, String tt) {
+        TraceBean traceBean = new TraceBean();
+        traceBean.en = EventType.Event_Pageview;
+        buildBaseParam(activity, traceBean);
+
+        traceBean.purl = purl;
+        traceBean.pref = pref;
+        traceBean.chid = mChid;
+        traceBean.tt = tt;
+//        traceBean.pa = pa;
+
+        upload(traceBean);
+    }
+
+    /**
+     * 目前有点击事件和订单事件  渠道开端传入渠道号
+     * @param activity
+     * @param chid   渠道开端点击事件时必须传入，新渠道开端点击事件时重制
+     */
+    public void event(Activity activity, String purl, String tt, String pa, String category, String action, HashMap<String, String> kv, String chid) {
         TraceBean traceBean = new TraceBean();
         traceBean.en = EventType.Event_Event;
         buildBaseParam(activity, traceBean);
@@ -139,7 +136,7 @@ public class YbxTrace {
         }
 
         traceBean.purl = purl;
-        traceBean.pref = pref;
+//        traceBean.pref = pref;
         traceBean.tt = tt;
         traceBean.pa = pa;
 
@@ -222,11 +219,11 @@ public class YbxTrace {
                 maps.put("pref", TextUtils.isEmpty(traceBean.pref) ? "" : traceBean.pref);
                 maps.put("chid", TextUtils.isEmpty(traceBean.chid) ? "" : traceBean.chid);
                 maps.put("tt", TextUtils.isEmpty(traceBean.tt) ? "" : traceBean.tt);
-                maps.put("pa", TextUtils.isEmpty(traceBean.pa) ? "" : traceBean.pa);
+//                maps.put("pa", TextUtils.isEmpty(traceBean.pa) ? "" : traceBean.pa);
                 break;
             case EventType.Event_Event:
                 maps.put("purl", TextUtils.isEmpty(traceBean.purl) ? "" : traceBean.purl);
-                maps.put("pref", TextUtils.isEmpty(traceBean.pref) ? "" : traceBean.pref);
+//                maps.put("pref", TextUtils.isEmpty(traceBean.pref) ? "" : traceBean.pref);
                 maps.put("chid", TextUtils.isEmpty(traceBean.chid) ? "" : traceBean.chid);
                 maps.put("tt", TextUtils.isEmpty(traceBean.tt) ? "" : traceBean.tt);
                 maps.put("pa", TextUtils.isEmpty(traceBean.pa) ? "" : traceBean.pa);
@@ -249,7 +246,8 @@ public class YbxTrace {
         ApiRequest.getApiLogstash().activityAnas(maps).enqueue(new Callback<ResponseBody>() {
             @Override
             public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
-                Logger.d("Ybxtrace————————————成功上传事件");
+
+                Logger.d("Ybxtrace成功上传事件———" + call.request().url());
             }
 
             @Override
