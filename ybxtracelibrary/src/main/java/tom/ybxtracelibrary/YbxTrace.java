@@ -42,27 +42,28 @@ public class YbxTrace {
     private static TraceMapBean    traceMapBean     = new TraceMapBean();
 
     private static volatile String mChid;     // 渠道id
+    private static volatile String mPurl;     // event事件的当前页，pageview事件的前一页
 
     private static volatile YbxTrace instance;
     private static          Context  mContext;
 
-    public static void initTrace(TraceCommonBean traceCommonBean, int strategy) {
+    public static void initTrace(Context context, TraceCommonBean traceCommonBean, int strategy) {
         // 读取assets下的mappingtxt文件
         //        String mapping = readAssetsTxt(context, fileName);
         //        if (!TextUtils.isEmpty(mapping)) {
         //            traceMapBean = new Gson().fromJson(mapping, TraceMapBean.class);
         //        }
+        mContext = context;
+
         //app基础信息
         mTraceCommonBean = traceCommonBean;
 
         // 上传策略
         uploadStrategy = strategy;
 
-
     }
 
-    public static YbxTrace getInstance(Context context) {
-        mContext = context;
+    public static YbxTrace getInstance() {
         if (instance == null) {
             synchronized (YbxTrace.class) {
                 if (instance == null) {
@@ -107,36 +108,39 @@ public class YbxTrace {
     /**
      * 页面事件
      */
-    public void pageView(Activity activity, String purl, String pref, String tt) {
+    public void pageView(Activity activity, String purl, String tt) {
         TraceBean traceBean = new TraceBean();
         traceBean.en = EventType.Event_Pageview;
         buildBaseParam(activity, traceBean);
 
         traceBean.purl = purl;
-        traceBean.pref = pref;
+        //        traceBean.pref = pref;
+        traceBean.pref = mPurl;
         traceBean.chid = mChid;
         traceBean.tt = tt;
-//        traceBean.pa = pa;
+        //        traceBean.pa = pa;
 
         upload(traceBean);
     }
 
     /**
      * 目前有点击事件和订单事件  渠道开端传入渠道号
+     *
      * @param activity
-     * @param chid   渠道开端点击事件时必须传入，新渠道开端点击事件时重制
+     * @param chid     渠道开端点击事件时必须传入，新渠道开端点击事件时重制
      */
     public void event(Activity activity, String purl, String tt, String pa, String category, String action, HashMap<String, String> kv, String chid) {
         TraceBean traceBean = new TraceBean();
         traceBean.en = EventType.Event_Event;
         buildBaseParam(activity, traceBean);
 
+        mPurl = purl;
         if (!TextUtils.isEmpty(chid)) {
             mChid = chid;
         }
 
         traceBean.purl = purl;
-//        traceBean.pref = pref;
+        //        traceBean.pref = pref;
         traceBean.tt = tt;
         traceBean.pa = pa;
 
@@ -173,7 +177,7 @@ public class YbxTrace {
         if (uploadStrategy == 1) {    //  0批量1即时
 
             String json = new Gson().toJson(traceBean);
-            Logger.d("analysAct------------>" + json);
+            Logger.d("YbxTrace---" + json);
 
             uploadImmediately(traceBean);
 
@@ -219,11 +223,11 @@ public class YbxTrace {
                 maps.put("pref", TextUtils.isEmpty(traceBean.pref) ? "" : traceBean.pref);
                 maps.put("chid", TextUtils.isEmpty(traceBean.chid) ? "" : traceBean.chid);
                 maps.put("tt", TextUtils.isEmpty(traceBean.tt) ? "" : traceBean.tt);
-//                maps.put("pa", TextUtils.isEmpty(traceBean.pa) ? "" : traceBean.pa);
+                //                maps.put("pa", TextUtils.isEmpty(traceBean.pa) ? "" : traceBean.pa);
                 break;
             case EventType.Event_Event:
                 maps.put("purl", TextUtils.isEmpty(traceBean.purl) ? "" : traceBean.purl);
-//                maps.put("pref", TextUtils.isEmpty(traceBean.pref) ? "" : traceBean.pref);
+                //                maps.put("pref", TextUtils.isEmpty(traceBean.pref) ? "" : traceBean.pref);
                 maps.put("chid", TextUtils.isEmpty(traceBean.chid) ? "" : traceBean.chid);
                 maps.put("tt", TextUtils.isEmpty(traceBean.tt) ? "" : traceBean.tt);
                 maps.put("pa", TextUtils.isEmpty(traceBean.pa) ? "" : traceBean.pa);
@@ -246,15 +250,30 @@ public class YbxTrace {
         ApiRequest.getApiLogstash().activityAnas(maps).enqueue(new Callback<ResponseBody>() {
             @Override
             public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
-
                 Logger.d("Ybxtrace成功上传事件———" + call.request().url());
             }
 
             @Override
             public void onFailure(Call<ResponseBody> call, Throwable t) {
-                errorCache.add(traceBean);
-                String data = new Gson().toJson(errorCache);
-                SPUtils.put(mContext, "errorCach", data);
+                Logger.d("Ybxtrace上传事件失败———" + call.request().url());
+
+                try {
+                    String               errorData = (String) SPUtils.get(mContext, "errorCach", "");
+                    ArrayList<TraceBean> errorList;
+                    if (TextUtils.isEmpty(errorData)) {
+                        errorList = new ArrayList<>();
+                        errorList.add(traceBean);
+                    } else {
+                        errorList = new Gson().fromJson(errorData, new TypeToken<ArrayList<TraceBean>>() {
+                        }.getType());
+                        errorList.add(traceBean);
+                    }
+                    String data = new Gson().toJson(errorList);
+                    SPUtils.put(mContext, "errorCach", data);
+                } catch (Exception e) {
+
+                }
+
             }
         });
     }
@@ -266,15 +285,19 @@ public class YbxTrace {
      * @param context
      */
     private void uploadErrorCache(Context context) {
-        String data = (String) SPUtils.get(context, "errorCach", "");
-        if (TextUtils.isEmpty(data))
-            return;
-        ArrayList<TraceBean> errorCach = new Gson().fromJson(data, new TypeToken<ArrayList<TraceBean>>() {
-        }.getType());
-        for (TraceBean traceBean : errorCach) {
-            uploadImmediately(traceBean);
+        try {
+            String data = (String) SPUtils.get(context, "errorCach", "");
+            if (TextUtils.isEmpty(data))
+                return;
+            ArrayList<TraceBean> errorCach = new Gson().fromJson(data, new TypeToken<ArrayList<TraceBean>>() {
+            }.getType());
+            for (TraceBean traceBean : errorCach) {
+                uploadImmediately(traceBean);
+            }
+            SPUtils.remove(context, "errorCach");
+        } catch (Exception e) {
+
         }
-        SPUtils.remove(context, "errorCach");
     }
 
     //    private static String readAssetsTxt(Context context, String fileName) {
