@@ -37,6 +37,8 @@ public class YbxTrace {
     // 存储转化率事件上传策略
     private static int uploadStrategy = 1;     //    0是批量上传，1是即时上传
 
+    private static boolean uploadSwitch = true;     //    上传开关， 默认打开
+
     // 存储转化率事件的基础参数
     private static TraceCommonBean mTraceCommonBean = new TraceCommonBean();
     private static TraceMapBean    traceMapBean     = new TraceMapBean();
@@ -82,45 +84,55 @@ public class YbxTrace {
         return mTraceCommonBean;
     }
 
+    public static void setUploadSwitch(boolean uploadSwitch) {
+        YbxTrace.uploadSwitch = uploadSwitch;
+    }
+
     /**
      * 第一次进入app，每次推出再进入app
      */
     public void launch(Activity activity) {
-        TraceBean traceBean = new TraceBean();
-        traceBean.en = EventType.Event_Launch;
+        if (uploadSwitch) {
+            TraceBean traceBean = new TraceBean();
+            traceBean.en = EventType.Event_Launch;
 
-        buildBaseParam(activity, traceBean);
+            buildBaseParam(activity, traceBean);
 
-        upload(traceBean);
+            upload(traceBean);
+        }
     }
 
     /**
      * 注册事件
      */
     public void register(Activity activity) {
-        TraceBean traceBean = new TraceBean();
-        traceBean.en = EventType.Event_Register;
-        buildBaseParam(activity, traceBean);
+        if (uploadSwitch) {
+            TraceBean traceBean = new TraceBean();
+            traceBean.en = EventType.Event_Register;
+            buildBaseParam(activity, traceBean);
 
-        upload(traceBean);
+            upload(traceBean);
+        }
     }
 
     /**
      * 页面事件
      */
     public void pageView(Activity activity, String purl, String tt) {
-        TraceBean traceBean = new TraceBean();
-        traceBean.en = EventType.Event_Pageview;
-        buildBaseParam(activity, traceBean);
+        if (uploadSwitch) {
+            TraceBean traceBean = new TraceBean();
+            traceBean.en = EventType.Event_Pageview;
+            buildBaseParam(activity, traceBean);
 
-        traceBean.purl = purl;
-        //        traceBean.pref = pref;
-        traceBean.pref = mPurl;
-        traceBean.chid = mChid;
-        traceBean.tt = tt;
-        //        traceBean.pa = pa;
+            traceBean.purl = purl;
+            //        traceBean.pref = pref;
+            traceBean.pref = mPurl;
+            traceBean.chid = mChid;
+            traceBean.tt = tt;
+            //        traceBean.pa = pa;
 
-        upload(traceBean);
+            upload(traceBean);
+        }
     }
 
     /**
@@ -130,31 +142,32 @@ public class YbxTrace {
      * @param chid     渠道开端点击事件时必须传入，新渠道开端点击事件时重制
      */
     public void event(Activity activity, String purl, String tt, String pa, String category, String action, HashMap<String, String> kv, String chid) {
-        TraceBean traceBean = new TraceBean();
-        traceBean.en = EventType.Event_Event;
-        buildBaseParam(activity, traceBean);
+        if (uploadSwitch) {
+            TraceBean traceBean = new TraceBean();
+            traceBean.en = EventType.Event_Event;
+            buildBaseParam(activity, traceBean);
 
-        mPurl = purl;
-        if (!TextUtils.isEmpty(chid)) {
-            mChid = chid;
+            mPurl = purl;
+            if (!TextUtils.isEmpty(chid)) {
+                mChid = chid;
+            }
+
+            traceBean.purl = purl;
+            //        traceBean.pref = pref;
+            traceBean.tt = tt;
+            traceBean.pa = pa;
+
+            traceBean.ca = category;
+            traceBean.ac = action;
+
+            traceBean.chid = mChid;
+            // kv
+            if (kv != null) {
+                traceBean.kv = kv;
+            }
+
+            upload(traceBean);
         }
-
-        traceBean.purl = purl;
-        //        traceBean.pref = pref;
-        traceBean.tt = tt;
-        traceBean.pa = pa;
-
-        traceBean.ca = category;
-        traceBean.ac = action;
-
-        traceBean.chid = mChid;
-        // kv
-        if (kv != null) {
-            traceBean.kv = kv;
-        }
-
-        upload(traceBean);
-
     }
 
     private void buildBaseParam(Activity activity, TraceBean traceBean) {
@@ -284,17 +297,17 @@ public class YbxTrace {
      *
      * @param context
      */
-    private void uploadErrorCache(Context context) {
+    public void uploadErrorCache(Context context) {
         try {
             String data = (String) SPUtils.get(context, "errorCach", "");
             if (TextUtils.isEmpty(data))
                 return;
             ArrayList<TraceBean> errorCach = new Gson().fromJson(data, new TypeToken<ArrayList<TraceBean>>() {
             }.getType());
+            SPUtils.remove(context, "errorCach");
             for (TraceBean traceBean : errorCach) {
                 uploadImmediately(traceBean);
             }
-            SPUtils.remove(context, "errorCach");
         } catch (Exception e) {
 
         }
