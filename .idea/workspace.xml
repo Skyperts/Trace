@@ -10,9 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1514f510-962b-4d65-876f-a128d9cc69d5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ybxtracelibrary/src/main/java/tom/ybxtracelibrary/YbxTrace.java" afterPath="$PROJECT_DIR$/ybxtracelibrary/src/main/java/tom/ybxtracelibrary/YbxTrace.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ybxtracelibrary/ybxtracelibrary.iml" afterPath="$PROJECT_DIR$/ybxtracelibrary/ybxtracelibrary.iml" />
     </list>
     <ignored path="Trace.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -47,11 +45,13 @@
       <file leaf-file-name="YbxTrace.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ybxtracelibrary/src/main/java/tom/ybxtracelibrary/YbxTrace.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="144" column="24" selection-start-line="144" selection-start-column="24" selection-end-line="144" selection-end-column="24" />
+            <state relative-caret-position="304">
+              <caret line="93" column="4" selection-start-line="93" selection-start-column="4" selection-end-line="93" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#10943#11020#0" expanded="false" />
+                <element signature="e#2716#2717#0" expanded="true" />
+                <element signature="e#2742#2743#0" expanded="true" />
+                <element signature="e#11003#11080#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -80,9 +80,23 @@
       <file leaf-file-name="SPUtils.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ybxtracelibrary/src/main/java/tom/ybxtracelibrary/Utils/SPUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1444">
+            <state relative-caret-position="494">
               <caret line="26" column="23" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ApiRequest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ybxtracelibrary/src/main/java/tom/ybxtracelibrary/Net/ApiRequest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="393">
+              <caret line="23" column="27" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -125,19 +139,6 @@
               <folding>
                 <element signature="imports" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activity_test.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ybxtracelibrary/src/main/res/layout/activity_test.xml">
-          <provider editor-type-id="android-designer2">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -3478,24 +3479,15 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ybxtracelibrary/src/main/java/tom/ybxtracelibrary/YbxTrace.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#10943#11020#0" expanded="false" />
+            <element signature="e#2716#2717#0" expanded="true" />
+            <element signature="e#2742#2743#0" expanded="true" />
+            <element signature="e#11003#11080#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -3709,7 +3701,9 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#10943#11020#0" expanded="false" />
+            <element signature="e#2716#2717#0" expanded="true" />
+            <element signature="e#2742#2743#0" expanded="true" />
+            <element signature="e#11003#11080#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -3923,7 +3917,9 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#10943#11020#0" expanded="false" />
+            <element signature="e#2716#2717#0" expanded="true" />
+            <element signature="e#2742#2743#0" expanded="true" />
+            <element signature="e#11003#11080#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -4137,7 +4133,9 @@
           <caret line="116" column="24" selection-start-line="116" selection-start-column="24" selection-end-line="116" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#10943#11020#0" expanded="false" />
+            <element signature="e#2716#2717#0" expanded="true" />
+            <element signature="e#2742#2743#0" expanded="true" />
+            <element signature="e#11003#11080#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -4210,7 +4208,9 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#10943#11020#0" expanded="false" />
+            <element signature="e#2716#2717#0" expanded="true" />
+            <element signature="e#2742#2743#0" expanded="true" />
+            <element signature="e#11003#11080#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -4457,19 +4457,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ybxtracelibrary/src/main/java/tom/ybxtracelibrary/Utils/SPUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1444">
+        <state relative-caret-position="494">
           <caret line="26" column="23" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ybxtracelibrary/src/main/java/tom/ybxtracelibrary/Net/ApiRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="23" column="27" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ybxtracelibrary/src/main/java/tom/ybxtracelibrary/YbxTrace.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="144" column="24" selection-start-line="144" selection-start-column="24" selection-end-line="144" selection-end-column="24" />
+        <state relative-caret-position="304">
+          <caret line="93" column="4" selection-start-line="93" selection-start-column="4" selection-end-line="93" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#10943#11020#0" expanded="false" />
+            <element signature="e#2716#2717#0" expanded="true" />
+            <element signature="e#2742#2743#0" expanded="true" />
+            <element signature="e#11003#11080#0" expanded="false" />
           </folding>
         </state>
       </provider>
