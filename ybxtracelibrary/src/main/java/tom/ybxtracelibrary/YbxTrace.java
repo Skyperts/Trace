@@ -88,6 +88,10 @@ public class YbxTrace {
         YbxTrace.uploadSwitch = uploadSwitch;
     }
 
+    public void clearChid(){
+        mChid = "";
+    }
+
     /**
      * 第一次进入app，每次推出再进入app
      */
