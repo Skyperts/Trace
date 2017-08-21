@@ -9,9 +9,7 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1514f510-962b-4d65-876f-a128d9cc69d5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ybxtracelibrary/src/main/java/tom/ybxtracelibrary/YbxTrace.java" afterPath="$PROJECT_DIR$/ybxtracelibrary/src/main/java/tom/ybxtracelibrary/YbxTrace.java" />
-    </list>
+    <list default="true" id="1514f510-962b-4d65-876f-a128d9cc69d5" name="Default" comment="" />
     <ignored path="Trace.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -45,13 +43,12 @@
       <file leaf-file-name="YbxTrace.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ybxtracelibrary/src/main/java/tom/ybxtracelibrary/YbxTrace.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
+            <state relative-caret-position="-6060">
               <caret line="92" column="5" selection-start-line="92" selection-start-column="5" selection-end-line="92" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2716#2717#0" expanded="true" />
                 <element signature="e#2742#2743#0" expanded="true" />
-                <element signature="e#10999#11076#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -3487,7 +3484,6 @@
             <element signature="imports" expanded="true" />
             <element signature="e#2716#2717#0" expanded="true" />
             <element signature="e#2742#2743#0" expanded="true" />
-            <element signature="e#10999#11076#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -3703,7 +3699,6 @@
             <element signature="imports" expanded="true" />
             <element signature="e#2716#2717#0" expanded="true" />
             <element signature="e#2742#2743#0" expanded="true" />
-            <element signature="e#10999#11076#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -3919,7 +3914,6 @@
             <element signature="imports" expanded="true" />
             <element signature="e#2716#2717#0" expanded="true" />
             <element signature="e#2742#2743#0" expanded="true" />
-            <element signature="e#10999#11076#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -4135,7 +4129,6 @@
             <element signature="imports" expanded="true" />
             <element signature="e#2716#2717#0" expanded="true" />
             <element signature="e#2742#2743#0" expanded="true" />
-            <element signature="e#10999#11076#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -4210,7 +4203,6 @@
             <element signature="imports" expanded="true" />
             <element signature="e#2716#2717#0" expanded="true" />
             <element signature="e#2742#2743#0" expanded="true" />
-            <element signature="e#10999#11076#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -4477,13 +4469,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ybxtracelibrary/src/main/java/tom/ybxtracelibrary/YbxTrace.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
+        <state relative-caret-position="-6060">
           <caret line="92" column="5" selection-start-line="92" selection-start-column="5" selection-end-line="92" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2716#2717#0" expanded="true" />
             <element signature="e#2742#2743#0" expanded="true" />
-            <element signature="e#10999#11076#0" expanded="false" />
           </folding>
         </state>
       </provider>
