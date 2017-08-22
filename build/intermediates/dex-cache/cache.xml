@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/a55/tom/Test/Trace/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="db470004207cfe23037ac8b75dfff0f7fb952842">
+        <dex dex="/Users/a55/tom/Test/Trace/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_016c944f11a1d696cb4ee215f166071094600a76/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/a55/tom/Test/Trace/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
+        <dex dex="/Users/a55/tom/Test/Trace/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_81b0cc2d4e32ab55def7ea2dcafa96c748287751/classes.dex" />
+    </item>
+
+</items>

@@ -39,11 +39,13 @@ public class FloatWindowService extends Service {
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
+        MyWindowManager.createFloatView(getApplicationContext());
+
         // 开启定时器，每隔0.5秒刷新一次
-        if (timer == null) {
-            timer = new Timer();
-            timer.scheduleAtFixedRate(new RefreshTask(), 0, 500);
-        }
+//        if (timer == null) {
+//            timer = new Timer();
+//            timer.scheduleAtFixedRate(new RefreshTask(), 0, 500);
+//        }
         return super.onStartCommand(intent, flags, startId);
     }
 
