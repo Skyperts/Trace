@@ -2,6 +2,7 @@ package tom.ybxtracelibrary;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.provider.Settings;
 import android.text.TextUtils;
 
@@ -95,6 +96,11 @@ public class YbxTrace {
 
     public void switchBottomTab(String pageview) {
         page = pageview;
+    }
+
+    public void startTranService(Activity activity) {
+        Intent intent = new Intent(activity, FloatWindowService.class);
+        activity.startService(intent);
     }
 
     /**
