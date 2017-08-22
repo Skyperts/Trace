@@ -10,6 +10,8 @@ import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.orhanobut.logger.Logger;
 
+import org.greenrobot.eventbus.EventBus;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 
@@ -17,6 +19,7 @@ import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
+import tom.ybxtracelibrary.Entity.Event;
 import tom.ybxtracelibrary.Entity.TraceBean;
 import tom.ybxtracelibrary.Entity.TraceCommonBean;
 import tom.ybxtracelibrary.Entity.TraceMapBean;
@@ -64,6 +67,7 @@ public class YbxTrace {
 
         // 上传策略
         uploadStrategy = strategy;
+
 
     }
 
@@ -208,6 +212,10 @@ public class YbxTrace {
             String json = new Gson().toJson(traceBean);
             Logger.d("YbxTrace---" + json);
 
+            Event event = new Event();
+            event.eventJson = json;
+            EventBus.getDefault().post(event);
+
             uploadImmediately(traceBean);
 
         } else {
@@ -328,6 +336,7 @@ public class YbxTrace {
 
         }
     }
+
 
     //    private static String readAssetsTxt(Context context, String fileName) {
     //        try {

@@ -7,6 +7,9 @@ import android.os.Build;
 import android.view.Gravity;
 import android.view.WindowManager;
 
+import org.greenrobot.eventbus.EventBus;
+import org.greenrobot.eventbus.Subscribe;
+
 /**
  * Created by a55 on 2017/8/22.
  */
@@ -32,6 +35,7 @@ public class MyWindowManager {
         int           screenWidth   = windowManager.getDefaultDisplay().getWidth();
         int           screenHeight  = windowManager.getDefaultDisplay().getHeight();
         if (myFloatView == null) {
+
             myFloatView = new MyFloatView(context);
             if (smallWindowParams == null) {
                 smallWindowParams = new WindowManager.LayoutParams();
