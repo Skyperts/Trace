@@ -35,7 +35,7 @@ public class MyFloatView extends LinearLayout {
     public MyFloatView(Context context) {
         super(context);
         // TODO Auto-generated constructor stub
-        EventBus.getDefault().register(context);
+        EventBus.getDefault().register(this);
         initView(context);
 
     }
