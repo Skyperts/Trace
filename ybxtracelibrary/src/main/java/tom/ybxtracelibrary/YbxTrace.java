@@ -45,6 +45,7 @@ public class YbxTrace {
 
     private static volatile String mChid;     // 渠道id
     private static volatile String page;      // event事件的当前页，pageview事件的前一页
+    private static volatile String mPurl;      // event事件的当前页，pageview事件的前一页
 
     private static volatile YbxTrace instance;
     private static          Context  mContext;
@@ -92,6 +93,10 @@ public class YbxTrace {
         mChid = "";
     }
 
+    public void switchBottomTab(String pageview) {
+        page = pageview;
+    }
+
     /**
      * 第一次进入app，每次推出再进入app
      */
@@ -130,7 +135,7 @@ public class YbxTrace {
 
             traceBean.purl = purl;
             //        traceBean.pref = pref;
-            traceBean.pref = page;
+            traceBean.pref = TextUtils.isEmpty(page) ? mPurl : page;
             traceBean.chid = mChid;
             traceBean.tt = tt;
             //        traceBean.pa = pa;
@@ -152,7 +157,7 @@ public class YbxTrace {
             traceBean.en = EventType.Event_Event;
             buildBaseParam(activity, traceBean);
 
-//            mPurl = purl;
+            mPurl = purl;
             if (!TextUtils.isEmpty(chid)) {
                 mChid = chid;
             }
