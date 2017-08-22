@@ -55,8 +55,8 @@ public class MyWindowManager {
                 smallWindowParams.flags = WindowManager.LayoutParams.FLAG_NOT_TOUCH_MODAL
                         | WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE;
                 smallWindowParams.gravity = Gravity.LEFT | Gravity.TOP;
-                smallWindowParams.width = 400;
-                smallWindowParams.height = 400;
+                smallWindowParams.width = screenWidth;
+                smallWindowParams.height = 600;
                 smallWindowParams.x = screenWidth;
                 smallWindowParams.y = screenHeight / 2;
             }
