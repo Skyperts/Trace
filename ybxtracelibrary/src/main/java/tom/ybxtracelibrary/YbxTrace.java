@@ -44,7 +44,7 @@ public class YbxTrace {
     private static TraceMapBean    traceMapBean     = new TraceMapBean();
 
     private static volatile String mChid;     // 渠道id
-    private static volatile String mPurl;     // event事件的当前页，pageview事件的前一页
+    private static volatile String page;      // event事件的当前页，pageview事件的前一页
 
     private static volatile YbxTrace instance;
     private static          Context  mContext;
@@ -88,7 +88,7 @@ public class YbxTrace {
         YbxTrace.uploadSwitch = uploadSwitch;
     }
 
-    public void clearChid(){
+    public void clearChid() {
         mChid = "";
     }
 
@@ -130,10 +130,11 @@ public class YbxTrace {
 
             traceBean.purl = purl;
             //        traceBean.pref = pref;
-            traceBean.pref = mPurl;
+            traceBean.pref = page;
             traceBean.chid = mChid;
             traceBean.tt = tt;
             //        traceBean.pa = pa;
+            page = purl;
 
             upload(traceBean);
         }
@@ -151,7 +152,7 @@ public class YbxTrace {
             traceBean.en = EventType.Event_Event;
             buildBaseParam(activity, traceBean);
 
-            mPurl = purl;
+//            mPurl = purl;
             if (!TextUtils.isEmpty(chid)) {
                 mChid = chid;
             }
