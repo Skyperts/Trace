@@ -2,7 +2,6 @@ package tom.ybxtracelibrary;
 
 import android.app.Activity;
 import android.content.Context;
-import android.content.Intent;
 import android.provider.Settings;
 import android.text.TextUtils;
 
@@ -19,7 +18,8 @@ import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
-import tom.ybxtracelibrary.Entity.Event;
+import tom.ybxfloatviewlibrary.FloatViewDataChangeEvent;
+import tom.ybxfloatviewlibrary.MyWindowManager;
 import tom.ybxtracelibrary.Entity.TraceBean;
 import tom.ybxtracelibrary.Entity.TraceCommonBean;
 import tom.ybxtracelibrary.Entity.TraceMapBean;
@@ -102,9 +102,12 @@ public class YbxTrace {
         page = pageview;
     }
 
-    public void startTranService(Activity activity) {
-        Intent intent = new Intent(activity, FloatWindowService.class);
-        activity.startService(intent);
+    public void showLogWindow(Context context, int width, int heigh) {
+        MyWindowManager.createFloatView(context, width, heigh);
+    }
+
+    public void dismissLogWindow(Context context, int width, int heigh) {
+        MyWindowManager.removeWindow(context);
     }
 
     /**
@@ -212,9 +215,9 @@ public class YbxTrace {
             String json = new Gson().toJson(traceBean);
             Logger.d("YbxTrace---" + json);
 
-            Event event = new Event();
-            event.eventJson = json;
-            EventBus.getDefault().post(event);
+            if (MyWindowManager.isWindowShowing()) {
+                MyWindowManager.notifyDataChange(json);
+            }
 
             uploadImmediately(traceBean);
 
@@ -337,116 +340,4 @@ public class YbxTrace {
         }
     }
 
-
-    //    private static String readAssetsTxt(Context context, String fileName) {
-    //        try {
-    //            //Return an AssetManager instance for your application's package
-    //            InputStream is   = context.getAssets().open(fileName);
-    //            int         size = is.available();
-    //            // Read the entire asset into a local byte buffer.
-    //            byte[] buffer = new byte[size];
-    //            is.read(buffer);
-    //            is.close();
-    //            // Convert the buffer into a string.
-    //            String text = new String(buffer, "utf-8");
-    //            // Finally stick the string into the text view.
-    //            return text;
-    //        } catch (IOException e) {
-    //            // Should never happen!
-    //            //            throw new RuntimeException(e);
-    //            e.printStackTrace();
-    //        }
-    //        return "";
-    //    }
-
-    //    /**
-    //     //     * 添加生成的点击事件节点
-    //     //     */
-    //    public void addClick(String goActivityName, String curlId, Context present, String presentActivityName, String cpos, String cpath) {
-    //        TraceBean traceBean = new TraceBean();
-    //        traceBean.a = "click";
-    //
-    //        String curlName = goActivityName;
-    //        if (traceMapBean != null) {
-    //            HashMap<String, String> vcs = traceMapBean.vc;
-    //            if (vcs != null && vcs.containsKey(curlName)) {
-    //                curlName = vcs.get(curlName);
-    //            }
-    //        }
-    //        traceBean.curl = curlName;
-    //        traceBean.curlId = curlId;
-    //
-    //        traceBean.t = System.currentTimeMillis();
-    //
-    //        String preName = presentActivityName;
-    //        if (traceMapBean != null) {
-    //            HashMap<String, String> vcs = traceMapBean.vc;
-    //            if (vcs != null && vcs.containsKey(preName)) {
-    //                preName = vcs.get(preName);
-    //            }
-    //        }
-    //        traceBean.l = preName;
-    //        traceBean.ltag = present.toString();
-    //
-    //        traceBean.cpos = cpos;
-    //        traceBean.cpath = cpath;
-    //
-    //        if (uploadStrategy == 1) {    //  0批量1即时
-    //            traceBean.uid = traceCommonBean.uid;
-    //            traceBean.u = traceCommonBean.u;
-    //            traceBean.app = traceCommonBean.app;
-    //            traceBean.ver = traceCommonBean.ver;
-    //            traceBean.p = traceCommonBean.p;
-    //            traceBean.sh = traceCommonBean.sh;
-    //            traceBean.sw = traceCommonBean.sw;
-    //            traceBean.dh = traceCommonBean.dh;
-    //            traceBean.dw = traceCommonBean.dw;
-    //            traceBean.uagent = traceCommonBean.uagent;
-    //
-    //            String json = new Gson().toJson(traceBean);
-    //            Logger.d("analysAct------------>" + json);
-    //
-    //            uploadImmediately(traceBean);
-    //
-    //        } else {
-    //            traces.add(traceBean);
-    //        }
-    //    }
-    //
-    //    /**
-    //     * 添加进入页面的事件
-    //     *
-    //     * @param curl
-    //     * @param curlId
-    //     */
-    //    public void addPageview(Context mContext, String curl, String curlId) {
-    //
-    //        TraceBean traceBean = new TraceBean();
-    //        if (uploadStrategy == 1) {    //  0批量1即时
-    //            traceBean.uid = traceCommonBean.uid;
-    //            traceBean.u = traceCommonBean.u;
-    //            traceBean.app = traceCommonBean.app;
-    //            traceBean.ver = traceCommonBean.ver;
-    //            traceBean.p = traceCommonBean.p;
-    //            traceBean.sh = traceCommonBean.sh;
-    //            traceBean.sw = traceCommonBean.sw;
-    //            traceBean.dh = traceCommonBean.dh;
-    //            traceBean.dw = traceCommonBean.dw;
-    //            traceBean.uagent = traceCommonBean.uagent;
-    //
-    //            traceBean.a = "pageview";
-    //            traceBean.curl = curl;
-    //            traceBean.curlId = curlId;
-    //            traceBean.t = System.currentTimeMillis();
-    //
-    //            uploadImmediately(traceBean);
-    //        } else {
-    //            traceBean.a = "pageview";
-    //            traceBean.curl = curl;
-    //            traceBean.curlId = curlId;
-    //            traceBean.t = System.currentTimeMillis();
-    //
-    //            traces.add(traceBean);
-    //        }
-    //    }
 }
