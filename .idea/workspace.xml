@@ -10,31 +10,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1514f510-962b-4d65-876f-a128d9cc69d5" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-08-22-19-21-17-850.rawproto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-08-22-20-42-28-046.rawproto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ybxtracelibrary/src/main/java/tom/ybxtracelibrary/Entity/Event.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ybxtracelibrary/src/main/java/tom/ybxtracelibrary/FloatWindowService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ybxtracelibrary/src/main/java/tom/ybxtracelibrary/MyFloatView.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ybxtracelibrary/src/main/java/tom/ybxtracelibrary/MyWindowManager.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ybxtracelibrary/src/main/java/tom/ybxtracelibrary/RVBaseAdapter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ybxtracelibrary/src/main/java/tom/ybxtracelibrary/RVBaseHolder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ybxtracelibrary/src/main/res/layout/layout_for_float_window.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ybxtracelibrary/src/main/res/layout/list_item.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-08-24-16-05-32-114.rawproto" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_ybxtracelibrary_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_ybxtracelibrary_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_ybxtracelibrary_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_ybxtracelibrary_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_ybxtracelibrary_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_ybxtracelibrary_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_ybxtracelibrary_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_ybxtracelibrary_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ybxtracelibrary/build.gradle" afterPath="$PROJECT_DIR$/ybxtracelibrary/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ybxtracelibrary/src/main/java/tom/ybxtracelibrary/Entity/TraceBean.java" afterPath="$PROJECT_DIR$/ybxtracelibrary/src/main/java/tom/ybxtracelibrary/Entity/TraceBean.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ybxtracelibrary/src/main/java/tom/ybxtracelibrary/YbxTrace.java" afterPath="$PROJECT_DIR$/ybxtracelibrary/src/main/java/tom/ybxtracelibrary/YbxTrace.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ybxtracelibrary/ybxtracelibrary.iml" afterPath="$PROJECT_DIR$/ybxtracelibrary/ybxtracelibrary.iml" />
     </list>
@@ -68,42 +53,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="DeviceUtils.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ybxtracelibrary/src/main/java/tom/ybxtracelibrary/Utils/DeviceUtils.java">
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="77">
-              <caret line="64" column="6" selection-start-line="64" selection-start-column="6" selection-end-line="64" selection-end-column="6" />
+            <state relative-caret-position="-161">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="YbxTrace.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="YbxTrace.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ybxtracelibrary/src/main/java/tom/ybxtracelibrary/YbxTrace.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="105" column="31" selection-start-line="105" selection-start-column="31" selection-end-line="105" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MyWindowManager.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.android/build-cache/6aa75f4255ce6e92d37d1d0b64381a5402236bb0/output/jars/classes.jar!/tom/ybxfloatviewlibrary/MyWindowManager.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
-              <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RecyclerView.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/Library/Android/sdk/extras/android/m2repository/com/android/support/recyclerview-v7/25.3.1/recyclerview-v7-25.3.1-sources.jar!/android/support/v7/widget/RecyclerView.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="150" column="13" selection-start-line="150" selection-start-column="13" selection-end-line="150" selection-end-column="13" />
-              <folding />
+            <state relative-caret-position="-4161">
+              <caret line="47" column="53" selection-start-line="47" selection-start-column="53" selection-end-line="47" selection-end-column="53" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -111,18 +78,8 @@
       <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ybxtracelibrary/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="17" column="42" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
+            <state relative-caret-position="665">
+              <caret line="35" column="60" selection-start-line="35" selection-start-column="60" selection-end-line="35" selection-end-column="60" />
               <folding />
             </state>
           </provider>
@@ -549,6 +506,11 @@
                 <option name="description" value="Prepare com.android.support.test:runner:0.5" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="prepareComAndroidSupportTestRunner05Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.github.ybx945ybx:Android-FloatWindow:1.0.7" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="prepareComGithubYbx945ybxAndroidFloatWindow107Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Runs lint on the Release build." />
@@ -1001,11 +963,6 @@
                 <option name="description" value="Displays the properties of root project 'Trace'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="properties" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Prepare com.github.ybx945ybx:Android-FloatWindow:1.0.6" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="prepareComGithubYbx945ybxAndroidFloatWindow106Library" />
               </ExternalTaskPojo>
             </list>
           </value>
@@ -2352,6 +2309,11 @@
                 <option name="name" value="prepareComAndroidSupportTestRunner05Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Prepare com.github.ybx945ybx:Android-FloatWindow:1.0.7" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ybxtracelibrary" />
+                <option name="name" value="prepareComGithubYbx945ybxAndroidFloatWindow107Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="description" value="Runs lint on the Release build." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ybxtracelibrary" />
                 <option name="name" value="lintRelease" />
@@ -2492,11 +2454,6 @@
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ybxtracelibrary" />
                 <option name="name" value="properties" />
               </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Prepare com.github.ybx945ybx:Android-FloatWindow:1.0.6" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ybxtracelibrary" />
-                <option name="name" value="prepareComGithubYbx945ybxAndroidFloatWindow106Library" />
-              </ExternalTaskPojo>
             </list>
           </value>
         </entry>
@@ -2504,7 +2461,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="6009151913000" />
+        <entry key="$PROJECT_DIR$" value="6009236498000" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -2887,7 +2844,6 @@
         <option value="$PROJECT_DIR$/ybxtracelibrary/src/main/java/tom/ybxtracelibrary/Utils/DeviceUtils.java" />
         <option value="$PROJECT_DIR$/ybxtracelibrary/src/main/java/tom/ybxtracelibrary/Entity/TraceKvBean.java" />
         <option value="$PROJECT_DIR$/ybxtracelibrary/src/main/java/tom/ybxtracelibrary/Entity/TraceCommonBean.java" />
-        <option value="$PROJECT_DIR$/ybxtracelibrary/src/main/java/tom/ybxtracelibrary/Entity/TraceBean.java" />
         <option value="$PROJECT_DIR$/ybxtracelibrary/src/main/java/tom/ybxtracelibrary/Entity/EventBus.java" />
         <option value="$PROJECT_DIR$/ybxtracelibrary/src/main/java/tom/ybxtracelibrary/RVBaseAdapter.java" />
         <option value="$PROJECT_DIR$/ybxtracelibrary/src/main/java/tom/ybxtracelibrary/RVBaseHolder.java" />
@@ -2896,9 +2852,10 @@
         <option value="$PROJECT_DIR$/ybxtracelibrary/src/main/java/tom/ybxtracelibrary/MyWindowManager.java" />
         <option value="$PROJECT_DIR$/ybxtracelibrary/src/main/res/layout/list_item.xml" />
         <option value="$PROJECT_DIR$/ybxtracelibrary/src/main/res/layout/layout_for_float_window.xml" />
-        <option value="$PROJECT_DIR$/ybxtracelibrary/build.gradle" />
         <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/ybxtracelibrary/src/main/java/tom/ybxtracelibrary/Entity/TraceBean.java" />
         <option value="$PROJECT_DIR$/ybxtracelibrary/src/main/java/tom/ybxtracelibrary/YbxTrace.java" />
+        <option value="$PROJECT_DIR$/ybxtracelibrary/build.gradle" />
       </list>
     </option>
   </component>
@@ -2932,6 +2889,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="AndroidView">
         <subPane>
@@ -3093,9 +3051,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -3450,10 +3407,9 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.11360239" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23850575" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14200298" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -3464,8 +3420,8 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -3477,6 +3433,7 @@
       <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23850575" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -3504,13 +3461,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ybxtracelibrary/src/main/res/layout/activity_test.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/tom/ybxtrance/MainActivity.java">
@@ -3521,13 +3478,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ybxtracelibrary/src/main/java/tom/ybxtracelibrary/YbxTrace.java">
@@ -3573,13 +3530,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ybxtracelibrary/src/main/res/layout/activity_test.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/tom/ybxtrance/MainActivity.java">
@@ -3590,13 +3547,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ybxtracelibrary/src/main/java/tom/ybxtracelibrary/YbxTrace.java">
@@ -3635,13 +3592,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ybxtracelibrary/src/main/res/layout/activity_test.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/tom/ybxtrance/MainActivity.java">
@@ -3652,13 +3609,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ybxtracelibrary/src/main/java/tom/ybxtracelibrary/YbxTrace.java">
@@ -3684,13 +3641,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ybxtracelibrary/src/main/res/layout/activity_test.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/tom/ybxtrance/MainActivity.java">
@@ -3701,13 +3658,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-25/java/lang/Exception.java">
@@ -3721,13 +3678,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ybxtracelibrary/src/main/java/tom/ybxtracelibrary/Entity/TraceBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="41" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
         </state>
       </provider>
     </entry>
@@ -3759,20 +3709,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ybxtracelibrary/src/main/java/tom/ybxtracelibrary/Entity/Event.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/ybxtracelibrary/src/main/java/tom/ybxtracelibrary/Entity/Event.java" />
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.greenrobot/eventbus/3.0.0/777f0a941d3dd0f9988d4f22b42b36ce2fe64ea4/eventbus-3.0.0-sources.jar!/org/greenrobot/eventbus/EventBus.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -3780,76 +3717,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ybxtracelibrary/src/main/java/tom/ybxtracelibrary/RVBaseAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ybxtracelibrary/src/main/java/tom/ybxtracelibrary/RVBaseHolder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="874">
-          <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ybxtracelibrary/src/main/java/tom/ybxtracelibrary/MyWindowManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ybxtracelibrary/src/main/java/tom/ybxtracelibrary/FloatWindowService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1082">
-          <caret line="28" column="7" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ybxtracelibrary/src/main/res/layout/list_item.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Library/Android/sdk/extras/android/m2repository/com/android/support/recyclerview-v7/25.3.1/recyclerview-v7-25.3.1-sources.jar!/android/support/v7/widget/RecyclerView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="150" column="13" selection-start-line="150" selection-start-column="13" selection-end-line="150" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ybxtracelibrary/src/main/res/layout/layout_for_float_window.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="40" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ybxtracelibrary/src/main/java/tom/ybxtracelibrary/MyFloatView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/ybxtracelibrary/src/main/java/tom/ybxtracelibrary/RVBaseAdapter.java" />
+    <entry file="file://$PROJECT_DIR$/ybxtracelibrary/src/main/java/tom/ybxtracelibrary/RVBaseHolder.java" />
+    <entry file="file://$PROJECT_DIR$/ybxtracelibrary/src/main/java/tom/ybxtracelibrary/MyWindowManager.java" />
+    <entry file="file://$PROJECT_DIR$/ybxtracelibrary/src/main/java/tom/ybxtracelibrary/FloatWindowService.java" />
+    <entry file="file://$PROJECT_DIR$/ybxtracelibrary/src/main/res/layout/list_item.xml" />
+    <entry file="file://$PROJECT_DIR$/ybxtracelibrary/src/main/res/layout/layout_for_float_window.xml" />
+    <entry file="file://$PROJECT_DIR$/ybxtracelibrary/src/main/java/tom/ybxtracelibrary/MyFloatView.java" />
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -3858,35 +3732,390 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ybxtracelibrary/build.gradle">
+    <entry file="jar://$USER_HOME$/Library/Android/sdk/extras/android/m2repository/com/android/support/recyclerview-v7/25.3.1/recyclerview-v7-25.3.1-sources.jar!/android/support/v7/widget/RecyclerView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="19">
+          <caret line="150" column="13" selection-start-line="150" selection-start-column="13" selection-end-line="150" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#554055#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#23365#23366#0" expanded="false" />
+            <element signature="e#23400#23401#0" expanded="false" />
+            <element signature="e#23474#23475#0" expanded="false" />
+            <element signature="e#23513#23514#0" expanded="false" />
+            <element signature="e#30782#30783#0" expanded="false" />
+            <element signature="e#30854#30855#0" expanded="false" />
+            <element signature="e#31343#31344#0" expanded="false" />
+            <element signature="e#31418#31419#0" expanded="false" />
+            <element signature="e#32034#32035#0" expanded="false" />
+            <element signature="e#32109#32110#0" expanded="false" />
+            <element signature="e#32504#32505#0" expanded="false" />
+            <element signature="e#32570#32571#0" expanded="false" />
+            <element signature="e#36469#36470#0" expanded="false" />
+            <element signature="e#36519#36520#0" expanded="false" />
+            <element signature="e#37526#37527#0" expanded="false" />
+            <element signature="e#37576#37577#0" expanded="false" />
+            <element signature="e#38861#38862#0" expanded="false" />
+            <element signature="e#38905#38906#0" expanded="false" />
+            <element signature="e#39093#39094#0" expanded="false" />
+            <element signature="e#39129#39130#0" expanded="false" />
+            <element signature="e#40093#40094#0" expanded="false" />
+            <element signature="e#40130#40131#0" expanded="false" />
+            <element signature="e#45346#45347#0" expanded="false" />
+            <element signature="e#45377#45378#0" expanded="false" />
+            <element signature="e#45908#45909#0" expanded="false" />
+            <element signature="e#45952#45953#0" expanded="false" />
+            <element signature="e#50805#50806#0" expanded="false" />
+            <element signature="e#50844#50845#0" expanded="false" />
+            <element signature="e#54276#54277#0" expanded="false" />
+            <element signature="e#54306#54307#0" expanded="false" />
+            <element signature="e#54766#54767#0" expanded="false" />
+            <element signature="e#54820#54821#0" expanded="false" />
+            <element signature="e#55358#55359#0" expanded="false" />
+            <element signature="e#55409#55410#0" expanded="false" />
+            <element signature="e#56397#56398#0" expanded="false" />
+            <element signature="e#56445#56446#0" expanded="false" />
+            <element signature="e#56681#56682#0" expanded="false" />
+            <element signature="e#56716#56717#0" expanded="false" />
+            <element signature="e#59095#59096#0" expanded="false" />
+            <element signature="e#59139#59140#0" expanded="false" />
+            <element signature="e#61261#61262#0" expanded="false" />
+            <element signature="e#61303#61304#0" expanded="false" />
+            <element signature="e#79953#79954#0" expanded="false" />
+            <element signature="e#79989#79990#0" expanded="false" />
+            <element signature="e#80227#80228#0" expanded="false" />
+            <element signature="e#80271#80272#0" expanded="false" />
+            <element signature="e#84189#84190#0" expanded="false" />
+            <element signature="e#84229#84230#0" expanded="false" />
+            <element signature="e#84431#84432#0" expanded="false" />
+            <element signature="e#84471#84472#0" expanded="false" />
+            <element signature="e#89307#89308#0" expanded="false" />
+            <element signature="e#89377#89378#0" expanded="false" />
+            <element signature="e#103847#103848#0" expanded="false" />
+            <element signature="e#103881#103882#0" expanded="false" />
+            <element signature="e#127160#127161#0" expanded="false" />
+            <element signature="e#127201#127202#0" expanded="false" />
+            <element signature="e#129464#129465#0" expanded="false" />
+            <element signature="e#129513#129514#0" expanded="false" />
+            <element signature="e#131224#131225#0" expanded="false" />
+            <element signature="e#131260#131261#0" expanded="false" />
+            <element signature="e#166202#166203#0" expanded="false" />
+            <element signature="e#166275#166276#0" expanded="false" />
+            <element signature="e#175621#175622#0" expanded="false" />
+            <element signature="e#175669#175670#0" expanded="false" />
+            <element signature="e#178899#178900#0" expanded="false" />
+            <element signature="e#178952#178953#0" expanded="false" />
+            <element signature="e#203315#203316#0" expanded="false" />
+            <element signature="e#203367#203368#0" expanded="false" />
+            <element signature="e#213902#213903#0" expanded="false" />
+            <element signature="e#213940#213941#0" expanded="false" />
+            <element signature="e#213965#213966#0" expanded="false" />
+            <element signature="e#214003#214004#0" expanded="false" />
+            <element signature="e#219897#219898#0" expanded="false" />
+            <element signature="e#219954#219955#0" expanded="false" />
+            <element signature="e#228067#228068#0" expanded="false" />
+            <element signature="e#228133#228134#0" expanded="false" />
+            <element signature="e#250415#250416#0" expanded="false" />
+            <element signature="e#250467#250468#0" expanded="false" />
+            <element signature="e#250509#250510#0" expanded="false" />
+            <element signature="e#250574#250575#0" expanded="false" />
+            <element signature="e#274905#274906#0" expanded="false" />
+            <element signature="e#274937#274938#0" expanded="false" />
+            <element signature="e#276042#276043#0" expanded="false" />
+            <element signature="e#276078#276079#0" expanded="false" />
+            <element signature="e#276718#276719#0" expanded="false" />
+            <element signature="e#276762#276763#0" expanded="false" />
+            <element signature="e#280391#280392#0" expanded="false" />
+            <element signature="e#280427#280428#0" expanded="false" />
+            <element signature="e#281734#281735#0" expanded="false" />
+            <element signature="e#281791#281792#0" expanded="false" />
+            <element signature="e#285775#285776#0" expanded="false" />
+            <element signature="e#285826#285827#0" expanded="false" />
+            <element signature="e#297653#297654#0" expanded="false" />
+            <element signature="e#297742#297743#0" expanded="false" />
+            <element signature="e#297819#297820#0" expanded="false" />
+            <element signature="e#297887#297888#0" expanded="false" />
+            <element signature="e#298146#298147#0" expanded="false" />
+            <element signature="e#298236#298237#0" expanded="false" />
+            <element signature="e#299527#299528#0" expanded="false" />
+            <element signature="e#299616#299617#0" expanded="false" />
+            <element signature="e#299693#299694#0" expanded="false" />
+            <element signature="e#299761#299762#0" expanded="false" />
+            <element signature="e#300020#300021#0" expanded="false" />
+            <element signature="e#300109#300110#0" expanded="false" />
+            <element signature="e#316276#316277#0" expanded="false" />
+            <element signature="e#316322#316323#0" expanded="false" />
+            <element signature="e#316699#316700#0" expanded="false" />
+            <element signature="e#316742#316743#0" expanded="false" />
+            <element signature="e#318153#318154#0" expanded="false" />
+            <element signature="e#318189#318190#0" expanded="false" />
+            <element signature="e#320033#320034#0" expanded="false" />
+            <element signature="e#320084#320085#0" expanded="false" />
+            <element signature="e#323612#323613#0" expanded="false" />
+            <element signature="e#323662#323663#0" expanded="false" />
+            <element signature="e#333878#333879#0" expanded="false" />
+            <element signature="e#333919#333920#0" expanded="false" />
+            <element signature="e#336710#336711#0" expanded="false" />
+            <element signature="e#336742#336743#0" expanded="false" />
+            <element signature="e#337612#337613#0" expanded="false" />
+            <element signature="e#337644#337645#0" expanded="false" />
+            <element signature="e#337938#337939#0" expanded="false" />
+            <element signature="e#337974#337975#0" expanded="false" />
+            <element signature="e#338262#338263#0" expanded="false" />
+            <element signature="e#338298#338299#0" expanded="false" />
+            <element signature="e#340752#340753#0" expanded="false" />
+            <element signature="e#340827#340828#0" expanded="false" />
+            <element signature="e#342139#342140#0" expanded="false" />
+            <element signature="e#342193#342194#0" expanded="false" />
+            <element signature="e#343099#343100#0" expanded="false" />
+            <element signature="e#343153#343154#0" expanded="false" />
+            <element signature="e#343493#343494#0" expanded="false" />
+            <element signature="e#343535#343536#0" expanded="false" />
+            <element signature="e#343932#343933#0" expanded="false" />
+            <element signature="e#343987#343988#0" expanded="false" />
+            <element signature="e#347264#347265#0" expanded="false" />
+            <element signature="e#347318#347319#0" expanded="false" />
+            <element signature="e#348711#348712#0" expanded="false" />
+            <element signature="e#348744#348745#0" expanded="false" />
+            <element signature="e#353969#353970#0" expanded="false" />
+            <element signature="e#354037#354038#0" expanded="false" />
+            <element signature="e#356207#356208#0" expanded="false" />
+            <element signature="e#356252#356253#0" expanded="false" />
+            <element signature="e#360420#360421#0" expanded="false" />
+            <element signature="e#360461#360462#0" expanded="false" />
+            <element signature="e#361095#361096#0" expanded="false" />
+            <element signature="e#361137#361138#0" expanded="false" />
+            <element signature="e#361295#361296#0" expanded="false" />
+            <element signature="e#361332#361333#0" expanded="false" />
+            <element signature="e#361493#361494#0" expanded="false" />
+            <element signature="e#361531#361532#0" expanded="false" />
+            <element signature="e#363393#363394#0" expanded="false" />
+            <element signature="e#363474#363475#0" expanded="false" />
+            <element signature="e#363742#363743#0" expanded="false" />
+            <element signature="e#363822#363823#0" expanded="false" />
+            <element signature="e#374427#374428#0" expanded="false" />
+            <element signature="e#374482#374483#0" expanded="false" />
+            <element signature="e#398506#398507#0" expanded="false" />
+            <element signature="e#398541#398542#0" expanded="false" />
+            <element signature="e#414490#414491#0" expanded="false" />
+            <element signature="e#414522#414523#0" expanded="false" />
+            <element signature="e#415077#415078#0" expanded="false" />
+            <element signature="e#415109#415110#0" expanded="false" />
+            <element signature="e#415679#415680#0" expanded="false" />
+            <element signature="e#415711#415712#0" expanded="false" />
+            <element signature="e#416222#416223#0" expanded="false" />
+            <element signature="e#416254#416255#0" expanded="false" />
+            <element signature="e#416801#416802#0" expanded="false" />
+            <element signature="e#416833#416834#0" expanded="false" />
+            <element signature="e#417395#417396#0" expanded="false" />
+            <element signature="e#417427#417428#0" expanded="false" />
+            <element signature="e#418881#418882#0" expanded="false" />
+            <element signature="e#418953#418954#0" expanded="false" />
+            <element signature="e#419093#419094#0" expanded="false" />
+            <element signature="e#419166#419167#0" expanded="false" />
+            <element signature="e#419888#419889#0" expanded="false" />
+            <element signature="e#419923#419924#0" expanded="false" />
+            <element signature="e#428609#428610#0" expanded="false" />
+            <element signature="e#428666#428667#0" expanded="false" />
+            <element signature="e#432006#432007#0" expanded="false" />
+            <element signature="e#432042#432043#0" expanded="false" />
+            <element signature="e#437647#437648#0" expanded="false" />
+            <element signature="e#437683#437684#0" expanded="false" />
+            <element signature="e#439983#439984#0" expanded="false" />
+            <element signature="e#440024#440025#0" expanded="false" />
+            <element signature="e#445799#445800#0" expanded="false" />
+            <element signature="e#445835#445836#0" expanded="false" />
+            <element signature="e#457024#457025#0" expanded="false" />
+            <element signature="e#457082#457083#0" expanded="false" />
+            <element signature="e#461345#461346#0" expanded="false" />
+            <element signature="e#461388#461389#0" expanded="false" />
+            <element signature="e#461634#461635#0" expanded="false" />
+            <element signature="e#461672#461673#0" expanded="false" />
+            <element signature="e#461795#461796#0" expanded="false" />
+            <element signature="e#461839#461840#0" expanded="false" />
+            <element signature="e#461868#461869#0" expanded="false" />
+            <element signature="e#461922#461923#0" expanded="false" />
+            <element signature="e#461948#461949#0" expanded="false" />
+            <element signature="e#462005#462006#0" expanded="false" />
+            <element signature="e#462047#462048#0" expanded="false" />
+            <element signature="e#462118#462119#0" expanded="false" />
+            <element signature="e#462163#462164#0" expanded="false" />
+            <element signature="e#462230#462231#0" expanded="false" />
+            <element signature="e#462267#462268#0" expanded="false" />
+            <element signature="e#462327#462328#0" expanded="false" />
+            <element signature="e#462358#462359#0" expanded="false" />
+            <element signature="e#462412#462413#0" expanded="false" />
+            <element signature="e#462613#462614#0" expanded="false" />
+            <element signature="e#462672#462673#0" expanded="false" />
+            <element signature="e#462705#462706#0" expanded="false" />
+            <element signature="e#462763#462764#0" expanded="false" />
+            <element signature="e#462792#462793#0" expanded="false" />
+            <element signature="e#462849#462850#0" expanded="false" />
+            <element signature="e#462880#462881#0" expanded="false" />
+            <element signature="e#462939#462940#0" expanded="false" />
+            <element signature="e#462986#462987#0" expanded="false" />
+            <element signature="e#463038#463039#0" expanded="false" />
+            <element signature="e#463073#463074#0" expanded="false" />
+            <element signature="e#463137#463138#0" expanded="false" />
+            <element signature="e#463320#463321#0" expanded="false" />
+            <element signature="e#463386#463387#0" expanded="false" />
+            <element signature="e#463422#463423#0" expanded="false" />
+            <element signature="e#463461#463462#0" expanded="false" />
+            <element signature="e#469567#469568#0" expanded="false" />
+            <element signature="e#469633#469634#0" expanded="false" />
+            <element signature="e#470021#470022#0" expanded="false" />
+            <element signature="e#470079#470080#0" expanded="false" />
+            <element signature="e#472424#472425#0" expanded="false" />
+            <element signature="e#472484#472485#0" expanded="false" />
+            <element signature="e#474462#474463#0" expanded="false" />
+            <element signature="e#474501#474502#0" expanded="false" />
+            <element signature="e#474555#474556#0" expanded="false" />
+            <element signature="e#474599#474600#0" expanded="false" />
+            <element signature="e#474657#474658#0" expanded="false" />
+            <element signature="e#474694#474695#0" expanded="false" />
+            <element signature="e#474756#474757#0" expanded="false" />
+            <element signature="e#474793#474794#0" expanded="false" />
+            <element signature="e#474845#474846#0" expanded="false" />
+            <element signature="e#474907#474908#0" expanded="false" />
+            <element signature="e#475200#475201#0" expanded="false" />
+            <element signature="e#475256#475257#0" expanded="false" />
+            <element signature="e#475547#475548#0" expanded="false" />
+            <element signature="e#475601#475602#0" expanded="false" />
+            <element signature="e#476041#476042#0" expanded="false" />
+            <element signature="e#476095#476096#0" expanded="false" />
+            <element signature="e#476515#476516#0" expanded="false" />
+            <element signature="e#476569#476570#0" expanded="false" />
+            <element signature="e#476750#476751#0" expanded="false" />
+            <element signature="e#476806#476807#0" expanded="false" />
+            <element signature="e#477108#477109#0" expanded="false" />
+            <element signature="e#477170#477171#0" expanded="false" />
+            <element signature="e#477607#477608#0" expanded="false" />
+            <element signature="e#477670#477671#0" expanded="false" />
+            <element signature="e#479341#479342#0" expanded="false" />
+            <element signature="e#479400#479401#0" expanded="false" />
+            <element signature="e#480788#480789#0" expanded="false" />
+            <element signature="e#480844#480845#0" expanded="false" />
+            <element signature="e#481094#481095#0" expanded="false" />
+            <element signature="e#481139#481140#0" expanded="false" />
+            <element signature="e#482413#482414#0" expanded="false" />
+            <element signature="e#482462#482463#0" expanded="false" />
+            <element signature="e#482587#482588#0" expanded="false" />
+            <element signature="e#482626#482627#0" expanded="false" />
+            <element signature="e#482890#482891#0" expanded="false" />
+            <element signature="e#482936#482937#0" expanded="false" />
+            <element signature="e#484723#484724#0" expanded="false" />
+            <element signature="e#484791#484792#0" expanded="false" />
+            <element signature="e#488639#488640#0" expanded="false" />
+            <element signature="e#488709#488710#0" expanded="false" />
+            <element signature="e#488993#488994#0" expanded="false" />
+            <element signature="e#489053#489054#0" expanded="false" />
+            <element signature="e#490622#490623#0" expanded="false" />
+            <element signature="e#490686#490687#0" expanded="false" />
+            <element signature="e#490725#490726#0" expanded="false" />
+            <element signature="e#490784#490785#0" expanded="false" />
+            <element signature="e#492775#492776#0" expanded="false" />
+            <element signature="e#492817#492818#0" expanded="false" />
+            <element signature="e#492964#492965#0" expanded="false" />
+            <element signature="e#493006#493007#0" expanded="false" />
+            <element signature="e#493159#493160#0" expanded="false" />
+            <element signature="e#493207#493208#0" expanded="false" />
+            <element signature="e#493397#493398#0" expanded="false" />
+            <element signature="e#493449#493450#0" expanded="false" />
+            <element signature="e#495885#495886#0" expanded="false" />
+            <element signature="e#495937#495938#0" expanded="false" />
+            <element signature="e#499285#499286#0" expanded="false" />
+            <element signature="e#499326#499327#0" expanded="false" />
+            <element signature="e#499555#499556#0" expanded="false" />
+            <element signature="e#499612#499613#0" expanded="false" />
+            <element signature="e#500060#500061#0" expanded="false" />
+            <element signature="e#500135#500136#0" expanded="false" />
+            <element signature="e#505836#505837#0" expanded="false" />
+            <element signature="e#505879#505880#0" expanded="false" />
+            <element signature="e#505989#505990#0" expanded="false" />
+            <element signature="e#506032#506033#0" expanded="false" />
+            <element signature="e#506370#506371#0" expanded="false" />
+            <element signature="e#506425#506426#0" expanded="false" />
+            <element signature="e#506751#506752#0" expanded="false" />
+            <element signature="e#506802#506803#0" expanded="false" />
+            <element signature="e#508775#508776#0" expanded="false" />
+            <element signature="e#508821#508822#0" expanded="false" />
+            <element signature="e#509378#509379#0" expanded="false" />
+            <element signature="e#509426#509427#0" expanded="false" />
+            <element signature="e#518302#518303#0" expanded="false" />
+            <element signature="e#518346#518347#0" expanded="false" />
+            <element signature="e#518557#518558#0" expanded="false" />
+            <element signature="e#518609#518610#0" expanded="false" />
+            <element signature="e#518804#518805#0" expanded="false" />
+            <element signature="e#518847#518848#0" expanded="false" />
+            <element signature="e#519053#519054#0" expanded="false" />
+            <element signature="e#519103#519104#0" expanded="false" />
+            <element signature="e#519307#519308#0" expanded="false" />
+            <element signature="e#519353#519354#0" expanded="false" />
+            <element signature="e#519574#519575#0" expanded="false" />
+            <element signature="e#519630#519631#0" expanded="false" />
+            <element signature="e#519834#519835#0" expanded="false" />
+            <element signature="e#519880#519881#0" expanded="false" />
+            <element signature="e#520101#520102#0" expanded="false" />
+            <element signature="e#520157#520158#0" expanded="false" />
+            <element signature="e#520571#520572#0" expanded="false" />
+            <element signature="e#520615#520616#0" expanded="false" />
+            <element signature="e#545705#545706#0" expanded="false" />
+            <element signature="e#545740#545741#0" expanded="false" />
+            <element signature="e#548557#548558#0" expanded="false" />
+            <element signature="e#548608#548609#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ybxtracelibrary/src/main/java/tom/ybxtracelibrary/Utils/DeviceUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1425">
+          <caret line="75" column="35" selection-start-line="75" selection-start-column="35" selection-end-line="75" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/.android/build-cache/6aa75f4255ce6e92d37d1d0b64381a5402236bb0/output/jars/classes.jar!/tom/ybxfloatviewlibrary/MyWindowManager.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
+        <state relative-caret-position="1235">
           <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ybxtracelibrary/src/main/java/tom/ybxtracelibrary/Entity/TraceBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="42" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-161">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ybxtracelibrary/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="665">
+          <caret line="35" column="60" selection-start-line="35" selection-start-column="60" selection-end-line="35" selection-end-column="60" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ybxtracelibrary/src/main/java/tom/ybxtracelibrary/YbxTrace.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="105" column="31" selection-start-line="105" selection-start-column="31" selection-end-line="105" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ybxtracelibrary/src/main/java/tom/ybxtracelibrary/Utils/DeviceUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="77">
-          <caret line="64" column="6" selection-start-line="64" selection-start-column="6" selection-end-line="64" selection-end-column="6" />
-          <folding />
+        <state relative-caret-position="-4161">
+          <caret line="47" column="53" selection-start-line="47" selection-start-column="53" selection-end-line="47" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

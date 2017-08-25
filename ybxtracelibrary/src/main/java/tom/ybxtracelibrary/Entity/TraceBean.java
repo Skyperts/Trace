@@ -21,7 +21,9 @@ public class TraceBean extends TraceCommonBean {
     public String rst;          // app指手机分辨率
 
     public String purl;         // 当前页面标识
+    public String purlh;        // 当前页面标识Hash
     public String pref;         // 前一页面标识
+    public String prefh;        // 前一页面标识Hash
     public String pa;           // 用户点击路径path
     public String chid;         // 渠道id  待定义
     public String tt;           // 页面标题
@@ -31,6 +33,6 @@ public class TraceBean extends TraceCommonBean {
     public String ca;           // Event事件类目category，目前有点击类目（c click）和订单类目(o order)
     public String ac;           // Event事件动作，每一个动作有对应的类目
 
-    public HashMap<String, String > kv;         // 预留参数
+    public HashMap<String, String> kv;         // 预留参数
 
 }

@@ -3,13 +3,12 @@ package tom.ybxtracelibrary;
 import android.app.Activity;
 import android.content.Context;
 import android.provider.Settings;
+import android.support.v4.app.Fragment;
 import android.text.TextUtils;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.orhanobut.logger.Logger;
-
-import org.greenrobot.eventbus.EventBus;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -18,7 +17,6 @@ import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
-import tom.ybxfloatviewlibrary.FloatViewDataChangeEvent;
 import tom.ybxfloatviewlibrary.MyWindowManager;
 import tom.ybxtracelibrary.Entity.TraceBean;
 import tom.ybxtracelibrary.Entity.TraceCommonBean;
@@ -49,17 +47,15 @@ public class YbxTrace {
 
     private static volatile String mChid;     // 渠道id
     private static volatile String page;      // event事件的当前页，pageview事件的前一页
-    private static volatile String mPurl;      // event事件的当前页，pageview事件的前一页
+    private static volatile String mPurl;     // event事件的当前页，pageview事件的前一页
+
+    private static volatile String pageh;     // event事件的当前页hash，pageview事件的前一页hash
+    private static volatile String mPurlh;    // event事件的当前页hash，pageview事件的前一页hash
 
     private static volatile YbxTrace instance;
     private static          Context  mContext;
 
     public static void initTrace(Context context, TraceCommonBean traceCommonBean, int strategy) {
-        // 读取assets下的mappingtxt文件
-        //        String mapping = readAssetsTxt(context, fileName);
-        //        if (!TextUtils.isEmpty(mapping)) {
-        //            traceMapBean = new Gson().fromJson(mapping, TraceMapBean.class);
-        //        }
         mContext = context;
 
         //app基础信息
@@ -67,7 +63,6 @@ public class YbxTrace {
 
         // 上传策略
         uploadStrategy = strategy;
-
 
     }
 
@@ -98,8 +93,15 @@ public class YbxTrace {
         mChid = "";
     }
 
-    public void switchBottomTab(String pageview) {
+    public void switchBottomTab(Fragment fragment, String pageview) {
         page = pageview;
+
+        String purlh      = "";
+        String purlString = fragment.toString();
+        if (!TextUtils.isEmpty(purlString)) {
+            purlh = purlString.substring(purlString.indexOf("@") + 1);
+        }
+        pageh = purlh;
     }
 
     public void showLogWindow(Context context, int width, int heigh) {
@@ -140,19 +142,20 @@ public class YbxTrace {
     /**
      * 页面事件
      */
-    public void pageView(Activity activity, String purl, String tt) {
+    public void pageView(Activity activity, String pref, String prefh, String purl, String purlh, String tt) {
         if (uploadSwitch) {
             TraceBean traceBean = new TraceBean();
             traceBean.en = EventType.Event_Pageview;
             buildBaseParam(activity, traceBean);
 
             traceBean.purl = purl;
-            //        traceBean.pref = pref;
-            traceBean.pref = TextUtils.isEmpty(page) ? mPurl : page;
+            traceBean.purlh = purlh;
+
+            traceBean.pref = pref;
+            traceBean.prefh = prefh;
+
             traceBean.chid = mChid;
             traceBean.tt = tt;
-            //        traceBean.pa = pa;
-            page = purl;
 
             upload(traceBean);
         }
@@ -164,19 +167,21 @@ public class YbxTrace {
      * @param activity
      * @param chid     渠道开端点击事件时必须传入，新渠道开端点击事件时重制
      */
-    public void event(Activity activity, String purl, String tt, String pa, String category, String action, HashMap<String, String> kv, String chid) {
+    public void event(Activity activity, String pref, String prefh, String purl, String purlh, String tt, String pa, String category, String action, HashMap<String, String> kv, String chid) {
         if (uploadSwitch) {
             TraceBean traceBean = new TraceBean();
             traceBean.en = EventType.Event_Event;
             buildBaseParam(activity, traceBean);
 
-            mPurl = purl;
             if (!TextUtils.isEmpty(chid)) {
                 mChid = chid;
             }
 
             traceBean.purl = purl;
-            //        traceBean.pref = pref;
+            traceBean.purlh = purlh;
+            traceBean.pref = pref;
+            traceBean.prefh = prefh;
+
             traceBean.tt = tt;
             traceBean.pa = pa;
 
@@ -260,14 +265,18 @@ public class YbxTrace {
                 break;
             case EventType.Event_Pageview:
                 maps.put("purl", TextUtils.isEmpty(traceBean.purl) ? "" : traceBean.purl);
+                maps.put("purlh", TextUtils.isEmpty(traceBean.purlh) ? "" : traceBean.purlh);
                 maps.put("pref", TextUtils.isEmpty(traceBean.pref) ? "" : traceBean.pref);
+                maps.put("prefh", TextUtils.isEmpty(traceBean.prefh) ? "" : traceBean.prefh);
                 maps.put("chid", TextUtils.isEmpty(traceBean.chid) ? "" : traceBean.chid);
                 maps.put("tt", TextUtils.isEmpty(traceBean.tt) ? "" : traceBean.tt);
                 //                maps.put("pa", TextUtils.isEmpty(traceBean.pa) ? "" : traceBean.pa);
                 break;
             case EventType.Event_Event:
                 maps.put("purl", TextUtils.isEmpty(traceBean.purl) ? "" : traceBean.purl);
-                //                maps.put("pref", TextUtils.isEmpty(traceBean.pref) ? "" : traceBean.pref);
+                maps.put("purlh", TextUtils.isEmpty(traceBean.purlh) ? "" : traceBean.purlh);
+                maps.put("pref", TextUtils.isEmpty(traceBean.pref) ? "" : traceBean.pref);
+                maps.put("prefh", TextUtils.isEmpty(traceBean.prefh) ? "" : traceBean.prefh);
                 maps.put("chid", TextUtils.isEmpty(traceBean.chid) ? "" : traceBean.chid);
                 maps.put("tt", TextUtils.isEmpty(traceBean.tt) ? "" : traceBean.tt);
                 maps.put("pa", TextUtils.isEmpty(traceBean.pa) ? "" : traceBean.pa);
