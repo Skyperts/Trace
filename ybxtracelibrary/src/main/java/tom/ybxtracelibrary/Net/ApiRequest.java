@@ -25,8 +25,8 @@ public class ApiRequest {
         if (mRetrofitLogstash == null) {
 
             mRetrofitLogstash = new Retrofit.Builder()
-                    .baseUrl("http://api.55haitao.com/")
-//                    .addConverterFactory(GsonConverterFactory.create())
+                    .baseUrl("http://usertrack.55haitao.com/")
+                    //                    .addConverterFactory(GsonConverterFactory.create())
                     .build();
         }
         return mRetrofitLogstash;
@@ -35,7 +35,7 @@ public class ApiRequest {
     // 打点上报相关接口
     public interface ApiLogstash {
         // 即时上传
-        @POST("log1.gif")
+        @POST("ht.jpg?")
         Call<ResponseBody> activityAnas(@QueryMap Map<String, String> maps);
 
     }
