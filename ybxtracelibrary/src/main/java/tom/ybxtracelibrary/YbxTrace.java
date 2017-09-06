@@ -148,10 +148,10 @@ public class YbxTrace {
             traceBean.en = EventType.Event_Pageview;
             buildBaseParam(activity, traceBean);
 
-            traceBean.purl = purl;
+            traceBean.purl = transferString(purl);
             traceBean.purlh = purlh;
 
-            traceBean.pref = pref;
+            traceBean.pref = transferString(pref);
             traceBean.prefh = prefh;
 
             traceBean.chid = mChid;
@@ -159,6 +159,13 @@ public class YbxTrace {
 
             upload(traceBean);
         }
+    }
+
+    private String transferString(String s) {
+        if (!TextUtils.isEmpty(s) && s.contains("&")){
+            s.replaceAll("&", "<A>");
+        }
+        return s;
     }
 
     /**
@@ -177,9 +184,9 @@ public class YbxTrace {
                 mChid = chid;
             }
 
-            traceBean.purl = purl;
+            traceBean.purl = transferString(purl);
             traceBean.purlh = purlh;
-            traceBean.pref = pref;
+            traceBean.pref = transferString(pref);
             traceBean.prefh = prefh;
 
             traceBean.tt = tt;
@@ -305,6 +312,7 @@ public class YbxTrace {
             @Override
             public void onFailure(Call<ResponseBody> call, Throwable t) {
                 Logger.d("Ybxtrace上传事件失败———" + call.request().url());
+                Logger.d("Ybxtrace上传事件失败———" + t.getMessage());
 
                 try {
                     String               errorData = (String) SPUtils.get(mContext, "errorCach", "");
