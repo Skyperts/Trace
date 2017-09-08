@@ -163,7 +163,7 @@ public class YbxTrace {
 
     private String transferString(String s) {
         if (!TextUtils.isEmpty(s) && s.contains("&")){
-            s.replaceAll("&", "<A>");
+            s = s.replace("&", "<A>");
         }
         return s;
     }
