@@ -294,7 +294,7 @@ public class YbxTrace {
                 // kv
                 if (traceBean.kv != null) {
                     for (String key : traceBean.kv.keySet()) {
-                        maps.put(key, TextUtils.isEmpty(traceBean.kv.get(key)) ? "" : traceBean.kv.get(key));
+                        maps.put(key, TextUtils.isEmpty(traceBean.kv.get(key)) ? "" : transferString(traceBean.kv.get(key)));
                     }
                 }
                 break;

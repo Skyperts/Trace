@@ -7,6 +7,8 @@ import retrofit2.Call;
 import retrofit2.Retrofit;
 import retrofit2.http.POST;
 import retrofit2.http.QueryMap;
+import tom.ybxtracelibrary.Entity.TraceBean;
+import tom.ybxtracelibrary.YbxTrace;
 
 /**
  * Created by a55 on 2017/8/10.
@@ -25,6 +27,7 @@ public class ApiRequest {
         if (mRetrofitLogstash == null) {
 
             mRetrofitLogstash = new Retrofit.Builder()
+//                    .baseUrl(YbxTrace.getInstance().getTraceCommonBean().baseUrl)
                     .baseUrl("http://usertrack.55haitao.com/")
                     //                    .addConverterFactory(GsonConverterFactory.create())
                     .build();
