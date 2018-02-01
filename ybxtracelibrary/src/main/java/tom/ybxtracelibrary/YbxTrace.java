@@ -234,8 +234,7 @@ public class YbxTrace {
         traceBean.sdk = "java";
         traceBean.gid = Settings.Secure.getString(mContext.getContentResolver(), Settings.Secure.ANDROID_ID);
         traceBean.ct = System.currentTimeMillis() + "";
-        traceBean.l = DeviceUtils.getDeviceLanguage(activity);
-        traceBean.rst = DeviceUtils.getDensityWidth(activity) + "*" + DeviceUtils.getDensityHeight(activity);
+        traceBean.l = DeviceUtils.getDeviceLanguage(mContext);
 
     }
 
@@ -297,7 +296,6 @@ public class YbxTrace {
                 maps.put("prefh", TextUtils.isEmpty(traceBean.prefh) ? "" : traceBean.prefh);
                 maps.put("chid", TextUtils.isEmpty(traceBean.chid) ? "" : traceBean.chid);
                 maps.put("tt", TextUtils.isEmpty(traceBean.tt) ? "" : traceBean.tt);
-                //                maps.put("pa", TextUtils.isEmpty(traceBean.pa) ? "" : traceBean.pa);
                 break;
             case EventType.Event_Event:
                 maps.put("purl", TextUtils.isEmpty(traceBean.purl) ? "" : traceBean.purl);
