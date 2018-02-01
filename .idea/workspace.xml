@@ -10,10 +10,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1514f510-962b-4d65-876f-a128d9cc69d5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ybxtracelibrary/src/main/java/tom/ybxtracelibrary/Entity/TraceBean.java" afterPath="$PROJECT_DIR$/ybxtracelibrary/src/main/java/tom/ybxtracelibrary/Entity/TraceBean.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ybxtracelibrary/src/main/java/tom/ybxtracelibrary/Entity/TraceCommonBean.java" afterPath="$PROJECT_DIR$/ybxtracelibrary/src/main/java/tom/ybxtracelibrary/Entity/TraceCommonBean.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ybxtracelibrary/src/main/java/tom/ybxtracelibrary/YbxTrace.java" afterPath="$PROJECT_DIR$/ybxtracelibrary/src/main/java/tom/ybxtracelibrary/YbxTrace.java" />
     </list>
     <ignored path="Trace.iws" />
@@ -59,11 +55,21 @@
       <file leaf-file-name="YbxTrace.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ybxtracelibrary/src/main/java/tom/ybxtracelibrary/YbxTrace.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50">
-              <caret line="258" column="77" lean-forward="false" selection-start-line="258" selection-start-column="77" selection-end-line="258" selection-end-column="77" />
+            <state relative-caret-position="135">
+              <caret line="285" column="31" lean-forward="false" selection-start-line="285" selection-start-column="31" selection-end-line="285" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EventType.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ybxtracelibrary/src/main/java/tom/ybxtracelibrary/annotation/EventType.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="9" column="11" lean-forward="false" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -3192,7 +3198,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1517473421264" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1517476587088" />
       </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
@@ -3240,7 +3246,7 @@
       </Profilers>
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1517473421264" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1517476587088" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -3377,7 +3383,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1517473421264" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1517476587089" />
       </method>
     </configuration>
     <list size="1">
@@ -3688,13 +3694,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ybxtracelibrary/src/main/java/tom/ybxtracelibrary/annotation/EventType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="11" lean-forward="false" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ybxtracelibrary/src/main/java/tom/ybxtracelibrary/Utils/SPUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
@@ -3798,10 +3797,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ybxtracelibrary/src/main/java/tom/ybxtracelibrary/annotation/EventType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="11" lean-forward="false" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ybxtracelibrary/src/main/java/tom/ybxtracelibrary/YbxTrace.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="258" column="77" lean-forward="false" selection-start-line="258" selection-start-column="77" selection-end-line="258" selection-end-column="77" />
+        <state relative-caret-position="135">
+          <caret line="285" column="31" lean-forward="false" selection-start-line="285" selection-start-column="31" selection-end-line="285" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

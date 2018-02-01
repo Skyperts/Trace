@@ -46,6 +46,7 @@ public class YbxTrace {
     private static TraceMapBean    traceMapBean     = new TraceMapBean();
 
     private static volatile String mChid;     // 渠道id
+    private static volatile String mFid;      // 外部推送和魔窗渠道id
     private static volatile String page;      // event事件的当前页，pageview事件的前一页
     private static volatile String mPurl;     // event事件的当前页，pageview事件的前一页
 
@@ -155,6 +156,8 @@ public class YbxTrace {
             traceBean.prefh = prefh;
 
             traceBean.chid = mChid;
+            traceBean.fid = mFid;
+
             traceBean.tt = tt;
 
             upload(traceBean);
@@ -162,7 +165,7 @@ public class YbxTrace {
     }
 
     private String transferString(String s) {
-        if (!TextUtils.isEmpty(s) && s.contains("&")){
+        if (!TextUtils.isEmpty(s) && s.contains("&")) {
             s = s.replace("&", "<A>");
         }
         return s;
@@ -175,6 +178,10 @@ public class YbxTrace {
      * @param chid     渠道开端点击事件时必须传入，新渠道开端点击事件时重制
      */
     public void event(Activity activity, String pref, String prefh, String purl, String purlh, String tt, String pa, String category, String action, HashMap<String, String> kv, String chid) {
+        event(activity, pref, prefh, purl, purlh, tt, pa, category, action, kv, chid, "");
+    }
+
+    public void event(Activity activity, String pref, String prefh, String purl, String purlh, String tt, String pa, String category, String action, HashMap<String, String> kv, String chid, String fid) {
         if (uploadSwitch) {
             TraceBean traceBean = new TraceBean();
             traceBean.en = EventType.Event_Event;
@@ -182,6 +189,10 @@ public class YbxTrace {
 
             if (!TextUtils.isEmpty(chid)) {
                 mChid = chid;
+            }
+
+            if (!TextUtils.isEmpty(fid)) {
+                mFid = fid;
             }
 
             traceBean.purl = transferString(purl);
@@ -196,6 +207,9 @@ public class YbxTrace {
             traceBean.ac = action;
 
             traceBean.chid = mChid;
+            traceBean.fid = mFid;
+
+            traceBean.fid = fid;
             // kv
             if (kv != null) {
                 traceBean.kv = kv;
