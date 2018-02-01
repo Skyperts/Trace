@@ -30,6 +30,8 @@ public class TraceBean extends TraceCommonBean {
     public String x;            // 页面点击的x坐标
     public String y;            // 页面点击的y坐标
 
+    public String fid;          // 外部渠道字段 默认空字符串，"MW"魔窗 "Push"推送
+
     public String ca;           // Event事件类目category，目前有点击类目（c click）和订单类目(o order)
     public String ac;           // Event事件动作，每一个动作有对应的类目
 

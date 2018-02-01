@@ -8,6 +8,7 @@ import java.util.ArrayList;
 
 public class TraceCommonBean {
     // 基础参数
+    public String ver;            // 数据统计的版本
     public String v;            // app版本
     public String bid;          // 业务id（返利、官网直购）
     public String mid;          // 用户id

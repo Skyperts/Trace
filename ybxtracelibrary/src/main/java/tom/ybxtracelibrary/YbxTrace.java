@@ -206,6 +206,7 @@ public class YbxTrace {
     }
 
     private void buildBaseParam(Activity activity, TraceBean traceBean) {
+        traceBean.ver = mTraceCommonBean.ver;
         traceBean.v = mTraceCommonBean.v;
         traceBean.bid = mTraceCommonBean.bid;
         traceBean.mid = mTraceCommonBean.mid;
@@ -254,6 +255,8 @@ public class YbxTrace {
         // 基础类参数
         maps.put("en", TextUtils.isEmpty(traceBean.en) ? "" : traceBean.en);
         maps.put("v", TextUtils.isEmpty(traceBean.v) ? "" : traceBean.v);
+        maps.put("ver", TextUtils.isEmpty(traceBean.ver) ? "" : traceBean.ver);
+        maps.put("fid", TextUtils.isEmpty(traceBean.fid) ? "" : traceBean.fid);
         maps.put("bid", TextUtils.isEmpty(traceBean.bid) ? "" : traceBean.bid);
         maps.put("ip", TextUtils.isEmpty(traceBean.ip) ? "" : traceBean.ip);
         maps.put("pl", TextUtils.isEmpty(traceBean.pl) ? "" : traceBean.pl);
