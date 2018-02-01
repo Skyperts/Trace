@@ -18,7 +18,6 @@ public class TraceBean extends TraceCommonBean {
     public String gid;          // 设备id
     public String l;            // 手机系统语言
     public String ct;           // 访问(触发)时间戳(毫秒级)
-    public String rst;          // app指手机分辨率
 
     public String purl;         // 当前页面标识
     public String purlh;        // 当前页面标识Hash

@@ -1,6 +1,7 @@
 package tom.ybxtracelibrary.Utils;
 
 import android.app.Activity;
+import android.content.Context;
 import android.util.DisplayMetrics;
 
 import java.net.Inet4Address;
@@ -53,8 +54,8 @@ public class DeviceUtils {
     /**
      * 获得手机系统语言
      */
-    public static String getDeviceLanguage(Activity activity) {
-        Locale locale   = activity.getResources().getConfiguration().locale;
+    public static String getDeviceLanguage(Context context) {
+        Locale locale   = context.getResources().getConfiguration().locale;
         String language = locale.getLanguage();
         return language;
     }
