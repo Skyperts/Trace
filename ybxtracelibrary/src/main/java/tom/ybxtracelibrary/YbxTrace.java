@@ -121,7 +121,7 @@ public class YbxTrace {
             TraceBean traceBean = new TraceBean();
             traceBean.en = EventType.Event_Launch;
 
-            buildBaseParam(traceBean);
+            buildBaseParam(activity, traceBean);
 
             upload(traceBean);
         }
@@ -134,7 +134,7 @@ public class YbxTrace {
         if (uploadSwitch) {
             TraceBean traceBean = new TraceBean();
             traceBean.en = EventType.Event_Register;
-            buildBaseParam(traceBean);
+            buildBaseParam(activity, traceBean);
 
             upload(traceBean);
         }
@@ -147,7 +147,7 @@ public class YbxTrace {
         if (uploadSwitch) {
             TraceBean traceBean = new TraceBean();
             traceBean.en = EventType.Event_Pageview;
-            buildBaseParam(traceBean);
+            buildBaseParam(activity, traceBean);
 
             traceBean.purl = transferString(purl);
             traceBean.purlh = purlh;
@@ -180,14 +180,16 @@ public class YbxTrace {
     public void event(Activity activity, String pref, String prefh, String purl, String purlh, String tt, String pa, String category, String action, HashMap<String, String> kv, String chid) {
         event(activity, pref, prefh, purl, purlh, tt, pa, category, action, kv, chid, "");
     }
+
     public void event(String pref, String prefh, String purl, String purlh, String tt, String pa, String category, String action, HashMap<String, String> kv, String chid) {
         event(null, pref, prefh, purl, purlh, tt, pa, category, action, kv, chid, "");
     }
+
     public void event(Activity activity, String pref, String prefh, String purl, String purlh, String tt, String pa, String category, String action, HashMap<String, String> kv, String chid, String fid) {
         if (uploadSwitch) {
             TraceBean traceBean = new TraceBean();
             traceBean.en = EventType.Event_Event;
-            buildBaseParam(traceBean);
+            buildBaseParam(activity, traceBean);
 
             if (!TextUtils.isEmpty(chid)) {
                 mChid = chid;
@@ -221,7 +223,7 @@ public class YbxTrace {
         }
     }
 
-    private void buildBaseParam(TraceBean traceBean) {
+    private void buildBaseParam(Activity activity, TraceBean traceBean) {
         traceBean.ver = mTraceCommonBean.ver;
         traceBean.v = mTraceCommonBean.v;
         traceBean.bid = mTraceCommonBean.bid;
@@ -232,9 +234,15 @@ public class YbxTrace {
         traceBean.ip = DeviceUtils.getIp();
         traceBean.pl = "Android";
         traceBean.sdk = "java";
-        traceBean.gid = Settings.Secure.getString(mContext.getContentResolver(), Settings.Secure.ANDROID_ID);
         traceBean.ct = System.currentTimeMillis() + "";
-        traceBean.l = DeviceUtils.getDeviceLanguage(mContext);
+        if (activity == null) {
+            traceBean.gid = Settings.Secure.getString(mContext.getContentResolver(), Settings.Secure.ANDROID_ID);
+            traceBean.l = DeviceUtils.getDeviceLanguage(mContext);
+        } else {
+            traceBean.gid = Settings.Secure.getString(activity.getContentResolver(), Settings.Secure.ANDROID_ID);
+            traceBean.l = DeviceUtils.getDeviceLanguage(activity);
+
+        }
 
     }
 
