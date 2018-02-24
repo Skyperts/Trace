@@ -2,7 +2,6 @@ package tom.ybxtracelibrary;
 
 import android.app.Activity;
 import android.content.Context;
-import android.provider.Settings;
 import android.support.v4.app.Fragment;
 import android.text.TextUtils;
 
@@ -235,14 +234,8 @@ public class YbxTrace {
         traceBean.pl = "Android";
         traceBean.sdk = "java";
         traceBean.ct = System.currentTimeMillis() + "";
-        if (activity == null) {
-            traceBean.gid = Settings.Secure.getString(mContext.getContentResolver(), Settings.Secure.ANDROID_ID);
-            traceBean.l = DeviceUtils.getDeviceLanguage(mContext);
-        } else {
-            traceBean.gid = Settings.Secure.getString(activity.getContentResolver(), Settings.Secure.ANDROID_ID);
-            traceBean.l = DeviceUtils.getDeviceLanguage(activity);
-
-        }
+        traceBean.gid = mTraceCommonBean.gid;
+        traceBean.l = mTraceCommonBean.l;
 
     }
 

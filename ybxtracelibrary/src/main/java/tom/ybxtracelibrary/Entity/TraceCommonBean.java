@@ -14,6 +14,8 @@ public class TraceCommonBean {
     public String mid;          // 用户id
     public String iev;          // 设备信息
     public String rst;          // 屏幕分辨率
+    public String gid;          // 设备id
+    public String l;            // 手机系统语言
     public String baseUrl;      // 上传服务器的地址
 
     public ArrayList<TraceBean> traces;

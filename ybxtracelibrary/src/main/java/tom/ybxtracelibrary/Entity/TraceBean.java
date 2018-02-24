@@ -15,8 +15,6 @@ public class TraceBean extends TraceCommonBean {
     public String lot;          // 经度 longitude
     public String lat;          // 纬度 latitude
     public String sdk;          // 数据收集SDK来源 js
-    public String gid;          // 设备id
-    public String l;            // 手机系统语言
     public String ct;           // 访问(触发)时间戳(毫秒级)
 
     public String purl;         // 当前页面标识
